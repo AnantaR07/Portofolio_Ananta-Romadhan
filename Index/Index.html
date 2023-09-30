@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Personal Website</title>
+    <link rel="stylesheet" type="text/css" href="Index.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+  </head>
+  <body>
+    <header>
+        <!--- navigation --->
+        <nav>       
+          <!--- logo --->
+          <a href="#" class="logo">Portofolio NAN</a>
+          <a href="#" class="bottom" aria-hidden="true">Portofolio NAN</a>
+          <!--- menu --->
+          <ul>
+            <li><a href="C:\xampp\htdocs\Portofolio_NAN\Index\Index.html" class="bar">Home</a></li>
+            <li><a href="#" class="bar">Biodata</a></li>
+            <li><a href="#" class="bar">Tentang</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+      <div class="bio">
+        <div class="text-container">
+          <p>Halo,</p>
+          <p>Saya Ananta Romadhan</p>
+          <p>Front-End/Back-End Programmer</p>
+          <p>- Pendidikan: Universitas Muhammadiyah Malang<br>
+             - Hobby: Anime dan Game </p>
+      </div>
+      <div class="gambar">
+        <img src="../Asset/Asset/foto.png" />
+      </div>
+    </div>
+      
+    <div class="box-container">
+      <!-- services/layanan -->
+      <div class="skill">
+        <!--text-->
+        <div class="skill-text">
+          <p>Bahasa program yang dikuasai :</p>
+        </div>
+
+        <div class="slideshow-container">
+
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 5</div>
+            <img src="../Asset/Asset/logo_Cplus.png" style="width:100%">
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 5</div>
+            <img src="../Asset/Asset/logo_java.png" style="width:100%">
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 5</div>
+            <img src="../Asset/Asset/logo_python.png" style="width:100%">       
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <img src="../Asset/Asset/logo_web.png" style="width:100%">
+          </div> 
+
+          <div class="mySlides fade">
+            <div class="numbertext">5 / 5</div>
+            <img src="../Asset/Asset/logo_xml.png" style="width:100%">   
+          </div>
+          
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+          
+          </div>
+          <br>
+          
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+            <span class="dot" onclick="currentSlide(5)"></span> 
+          </div>
+          
+          <script>
+          let slideIndex = 1;
+          showSlides(slideIndex);
+          
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+          
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+          
+          function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+          }
+          </script>
+        
+      </div>
+    </div>
+  </main>
+
+    <footer>
+      <div class="banner">
+      
+        <div class="networks">
+          <div id="instagram" class="networks-outer">
+            <a href="https://www.instagram.com/nan.yattaaaa/">
+              <i class="fa fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      
+        <div class="networks">
+          <div id="youtube" class="networks-outer">
+            <a href="https://www.youtube.com/">
+              <i class="fa fa-youtube-play"></i>
+            </a>
+          </div>
+        </div>
+      
+        <div class="networks">
+          <div id="pinterest" class="networks-outer">
+            <a href="https://id.pinterest.com/ananta076238/">
+              <i class="fa fa-pinterest"></i>
+            </a>
+          </div>
+        </div>
+      
+        <div class="networks">
+          <div id="linkedin" class="networks-outer">
+            <a href="https://www.linkedin.com/in/ananta-r">
+              <i class="fa fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      
+        <div class="networks">
+          <div id="github" class="networks-outer">
+            <a href="https://github.com/AnantaR07">
+              <i class="fa fa-github"></i>
+            </a>
+          </div>
+        </div>
+      
+        <div class="networks">
+          <div id="whatsapp" class="networks-outer">
+            <a href="https://api.whatsapp.com/send?phone=087750704842">
+              <i class="fa fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+      <p class="copyright">Copyright by N.A.N</p>
+    </div>
+    </footer>
+
+    <!--social-attach-bar-->
+    <div class="social">
+      <a href="#"><span data-attr="E-Mail" data-attra = "ananta076238@gmail.com"></span>
+      <a href="#"><span data-attr="Instagram" data-attra = "@nan.yattaaaa"></span>
+      </div>
+      
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
+
+      <script>
+      let mybutton = document.getElementById("myBtn");
+      window.onscroll = function() {scrollFunction()};
+      function scrollFunction() {
+       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+       } else {
+        mybutton.style.display = "none";
+       }
+      }
+
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+     } 
+</script>
+   
+
+    
+  </body>
+</html>

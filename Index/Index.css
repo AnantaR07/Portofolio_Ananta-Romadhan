@@ -1,0 +1,566 @@
+@charset "utf-8";
+/* CSS Document*/
+body {
+  background-color: #ffffff;
+  margin: 0px;
+  padding: 0px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  width: 100%;
+  height: 95vh;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: black;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  padding: 0px 5%;
+  width: 90%;
+}
+nav ul {
+  display: flex;
+}
+
+nav ul a li {
+  margin: 20px;
+  font-family: myriad pro regular;
+  color: #505050;
+  font-size: 15px;
+  font-weight: 700;
+  justify-content: flex-end;
+}
+
+.logo {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 48%, 0% 58%);
+  color: white;
+  padding-left: 1px;
+  font-size: 40px;
+}
+
+.bottom {
+  clip-path: polygon(0% 60%, 100% 60%, 100% 100%, 0% 100%);
+  color: transparent;
+  background: -webkit-linear-gradient(177deg, black 53%, var(--text-color) 65%);
+  background: linear-gradient(177deg, black 53%, var(--text-color) 65%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  transform: translateX(-0.02em);
+  color: white;
+  position: absolute;
+  padding-right: 1px;
+  font-size: 40px;
+}
+
+.up {
+  width: 50%;
+}
+
+.bar {
+  color: white;
+  font-size: 15px;
+  margin: 15px;
+}
+
+.bar:link {
+  color: red;
+}
+
+/* visited link */
+.bar:visited {
+  color: white;
+}
+
+/* mouse over link */
+.bar:hover {
+  color: red;
+}
+
+.bio{
+  display: flex;
+  justify-content:space-between;
+  align-items: center; /* Pusatkan vertikal */
+  width: 99%;
+  height: 100%;
+}
+
+.text-container {
+  width: 100%;
+  height: 100%;
+}
+
+.text-container p:nth-child(1) {
+  font-family: calibri;
+  font-weight: bold;
+  color: #6d6d6d;
+  font-size: 30px;
+  margin-left: 5%;
+}
+
+.text-container p:nth-child(2) {
+  font-family: calibri;
+  font-weight: bold;
+  color: #1a1a1a;
+  font-size: 50px;
+  margin-left: 5%;
+  font-style: italic;
+}
+
+.text-container p:nth-child(3) {
+  font-family: myriad pro regular;
+  color: #403e3e;
+  font-size: 30px;
+  line-height: 30px;
+  margin-left: 5%;
+}
+
+.text-container p:nth-child(4) {
+  font-family: calibri;
+  color: #403e3e;
+  font-size: 17px;
+  margin-top: 10px;
+  line-height: 30px;
+  margin-left: 5%;
+}
+
+.text-container p {
+  line-height: 0px;
+  margin: 55px 0px 25px;
+}
+
+.text-container img {
+  height: 300px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.gambar img{
+  height: 500px;
+}
+
+.skill {
+  width: 80%;
+  height: 100%;
+  background-color: #f6f5f5;
+  padding: 2% 10% 0px 10%;
+}
+
+.skill-text p:nth-child(1) {
+  font-family: calibri;
+  font-weight: bold;
+  color: #1d1c1c;
+  font-size: 30px;
+  line-height: 0px;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.skill-text p:nth-child(2) {
+  width: 100%;
+  font-family: calibri;
+  color: #7e7d7d;
+}
+
+.skill-text {
+  margin: 50px 0px;
+}
+
+.logo_code {
+  height: 400px;
+  width: 300px;
+  position: absolute;
+  top: 100%;
+  left: 20%;
+  transform: translateX(-70%);
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 50%;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: red;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
+
+footer p {
+  font-family: calibri;
+}
+
+footer p:nth-child(1) {
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 10px;
+  position: relative;
+}
+
+footer p:nth-child(2) {
+  font-size: 16px;
+  color: #7e7d7d;
+  width: 600px;
+  text-align: center;
+  position: relative;
+}
+
+footer {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #191919;
+}
+
+.banner {
+	position: relative;
+	text-align: center;
+}
+
+.networks {
+	display: inline-block;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.networks-outer {
+	display: table;
+	position: relative;
+	width: 5em;
+	height: 5em;
+	border: 2px solid white;
+	border-radius: 4em;
+	transition: background-color 0.2s ease-in-out;
+}
+
+.networks-outer a {
+	display: table-cell;
+	vertical-align: middle;
+	color: white;
+}
+
+.fa:before {
+	font-size: 40px;
+}
+
+.networks:hover .networks-outer {
+	background: rgba(255,255,255,.5);
+	cursor: pointer;
+}
+
+/**** Social-Network-Specific ****/
+
+.networks:hover .fa-facebook {
+	color: rgb(59,89,152);
+}
+
+#facebook.networks-outer:hover {
+	border-color: rgb(59,89,152);
+}
+
+.networks:hover .fa-instagram {
+	color: #FE7BE5;
+}
+
+#instagram.networks-outer:hover {
+	border-color: #FE7BE5;
+}
+
+.networks:hover .fa-youtube-play {
+	color: red;
+}
+
+#youtube.networks-outer:hover {
+	border-color: red;
+}
+
+.networks:hover .fa-twitter {
+	color: rgb(29,161,242);
+}
+
+#twitter.networks-outer:hover {
+	border-color: rgb(29,161,242);
+}
+
+@keyframes multicolor {
+	0% {
+		color: #4885ed;
+	}
+	33% {
+		color: #3cba54;
+	}
+	66% {
+		color: #f4c20d;
+	}
+	100% {
+		color: #db3236;
+	}
+}
+
+@keyframes multicolorBorder {
+	0% {
+		border-color: #4885ed;
+	}
+	33% {
+		border-color: #3cba54;
+	}
+	66% {
+		border-color: #f4c20d;
+	}
+	100% {
+		border-color: #db3236;
+	}
+}
+
+
+.networks:hover .fa-pinterest {
+	color: rgb(189,8,28);	
+}
+
+#pinterest.networks-outer:hover {
+	border-color: rgb(189,8,28);
+}
+
+.networks:hover .fa-linkedin {
+	color: #0077B5;
+}
+
+#linkedin.networks-outer:hover {
+	border-color: #0077B5;
+}
+
+.networks:hover .fa-github {
+	color: #ee802f;
+}
+
+#github.networks-outer:hover {
+	border-color: #ee802f;
+}
+
+.networks:hover .fa-whatsapp {
+	color: #05cc47;
+}
+
+#whatsapp.networks-outer:hover {
+	border-color: #05cc47;
+}
+
+.copyright {
+  color: white;
+  font-size: 15px;
+  left: 50%;
+  margin-top: 120px;
+  transform: translateX(-50%);
+  position: relative;
+}
+
+.social {
+  position: fixed;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+}
+
+.social a {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 35px;
+  height: 50px;
+  margin: 0px;
+  padding: 0px;
+  line-height: 0px;
+  background-color: #ffffff;
+  border: 1px solid #cbcbcb;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+.social a:hover {
+  background-color: #000000;
+  transition: all ease 0.5s;
+}
+
+.social i {
+  font-size: 20px;
+  color: #2b2b2b;
+}
+
+a span {
+  padding: 15px;
+  transition: 0.5s;
+  position: relative;
+  right: 250%;
+}
+a span:nth-child(1) {
+  color: #fff;
+  background: #262626;
+}
+
+a span:nth-child(2) {
+  color: #fff;
+  background: #ff3636;
+}
+a span:nth-child(1):before {
+  content: attr(data-attra);
+  position: absolute;
+  top: 0;
+  width: 170px;
+  right: -190%;
+  background: #ff3636;
+  padding: 15px;
+  transition: 0.5s;
+  transform-origin: top;
+  transform: rotateX(90deg) translateY(-50%);
+}
+a:hover span:nth-child(1):before {
+  transform: rotateX(0deg) translateY(0%);
+}
+a span:nth-child(1):after {
+  content: attr(data-attr);
+  padding: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 55px;
+  background: #262626;
+  transform-origin: bottom;
+  transform: rotateX(0deg) translateY(0%);
+  transition: 0.5s;
+}
+a:hover span:nth-child(1):after {
+  transform: rotateX(90deg) translateY(50%);
+}
+
+#myBtn {
+  display: none; 
+  position: fixed; 
+  bottom: 20px; 
+  right: 30px;
+  z-index: 99;
+  border: none; 
+  outline: none; 
+  background-color: red; 
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px; 
+  font-size: 18px; 
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+@media (max-width: 786px) {
+  nav ul {
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  main {
+    padding: 30px;
+  }
+
+}
